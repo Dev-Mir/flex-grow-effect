@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow-effect</title>
+</head>
+
+<style>
+body{
+    background-color: #1dbad6;
+}
+.container {
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background-color: #3F396F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 32px;
+    max-width: 500px;
+}
+
+.gallery {
+    display: flex;
+    gap: 4px;
+    
+}
+
+.card {
+    position: relative;
+    left: 0px;
+    width: 80px;
+    border-radius: 4px;
+    padding: 8px;
+    height: 160px;
+    background-color: white;
+    transition: 0.4s ease-in-out;
+    flex: 1px;
+}
+
+.card:nth-child(1) {
+    background-color: #ffffff;
+}
+
+.card:nth-child(2) {
+    background-color: #1dbad6;
+}
+
+.card:nth-child(3) {
+    background-color: #f16363;
+}
+
+.card:nth-child(4) {
+    background-color: #ffdd47;
+}
+
+.card:nth-child(5) {
+    background-color: #00ff73;
+}
+
+.card:hover {
+    flex: 3;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dev{
+    width: fit-content;
+    padding: 0.5%;
+    color: white;
+    border-radius: 0.5em;
+    margin-left: 30.5%;
+    background-color: #7e4e27;
+    cursor: pointer;
+
+}
+</style>
+
+<body>
+    
+    <Container class="container">
+        <div class="gallery">
+            <div class="card">
+                Card 1
+            </div>
+            <div class="card">
+                Card 2
+            </div>
+            <div class="card">
+                Card 3
+            </div>
+            <div class="card">
+                Card 4
+            </div>
+            <div class="card">
+                Card 5
+            </div>
+        </div>
+      </Container>
+
+      <p class="dev">Dev-Mir</p>
+
+
+</body>
+</html>
